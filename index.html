@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/nwv2dbx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="icon" href="./assets/favicon.png"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./script.js"></script>
+
+<body>
+    <nav>
+        <div class="item">
+        <ul>
+            <li onclick="handleScrollHome();">Home</li>
+            <li onclick="handleScrollAbout();">About</li>
+            <li onclick="handleScrollAchievements();">Achievements</li>
+            <li onclick="handleScrollPlacements();">Placements</li>
+            <li onclick="handleScrollContact();">Contact</li>
+        </ul>
+        </div>
+        <div class="logo">
+        <img height="50px"  src="./assets/Logo.png" />
+        </div>
+        
+    </nav>
+    <section id="home" class="homescreen">
+        <video autoplay loop muted>
+            <source src="./assets/video.mp4" type="video/mp4">
+        </video>
+
+        <div class="home">
+            <p class="tagline">Empowering innovation through Computer Science</p>
+            <p class="title">SCOPE</p>
+
+            <div onclick="handleScrollAbout();" class="discoverbutton">Discover more</div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="intro">
+            <h1 class="introhead">
+                School of Computer Science and Engineering (SCOPE)
+            </h1>
+            <br />
+            <h2 class="introduction">
+                Introduction
+            </h2>
+            <br />
+            <p class="intropara">
+                Computer Science Engineering is a field of engineering that has grown to be a major obliging field.
+                Computer science engineering has taken a good path towards establishing a strong position in the field
+                of engineering. VIT's School of Computer Science and Engineering was established in 2010. Since then,
+                VIT has produced a large number of computer science engineers who are capable of meeting the needs of IT
+                firms. VIT Chennai is the best engineering college for computer science and has maintained an excellent
+                reputation for many years.
+            </p>
+        </div>
+
+        <hr style="width:50%;margin-left: 22%;" />
+        <br />
+        <br />
+        <div class="home-demo">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <h2>Vision</h2>
+                    <p>To be a world-renowned centre of education, research and service in computing and allied domains.
+                    </p>
+                </div>
+                <div class="item">
+                    <h2>Mission</h2>
+                    <ul>
+                        <p>To offer computing education programs with the goal that the students become technically
+                            competent and develop lifelong learning skills.</p>
+                        <p>To undertake path-breaking research that creates new computing technologies and solutions for
+                            industry and society at large.</p>
+                        <p>To foster vibrant outreach programs for industry, research organizations, academia and
+                            society.</p>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>Opportunities</h2>
+                    <p>If you graduate from the best engineering college for computer science with good skills, you can
+                        work at top firms with titles such as software developer, web developer, computer system
+                        analyst, computer, data engineer, and many more. Students have a plethora of opportunities and
+                        must be willing to learn and update themselves in this creative community.</p>
+                </div>
+                <div class="item">
+                    <h2>Goals</h2>
+                    <ul>
+                        <p>VIT strives to achieve its goal of exhibiting excellence in terms of teaching and also to
+                            produce graduates who will be assets to society</p>
+                        <p>To produce graduates who can reach their full potential in designing and developing systems
+                            that involve integrating software and hardware devices</p>
+                        <p>To evoke a sense of determination and perseverance to achieve excellence in the students.</p>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>Specializations</h2>
+                    <ul>
+                        <p>Theoretical Computer Science </p>
+                        <p>Data Analytics </p>
+                        <p>Software Engineering</p>
+                        <p>Cyber-Physical Systems</p>
+                        <p>Artificial Intelligence</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var owl = $(".owl-carousel");
+                owl.owlCarousel({
+                    items: 3,
+                    margin: 10,
+                    loop: true,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                });
+            });
+        </script>
+    </section>
+    <section class="achievements" id="achievements">
+        <h1 style="color:#fff; text-align:center;font-size:50px;padding-top: 20px;">Achievements</h1>
+        <div style="color: white">
+            <div style="color:rgb(255, 255, 255);">
+                <div style="margin-top: 50px; margin-bottom: 6vh;">
+                    <img width="400px" style="margin-left:10vw;" src="./assets/a1-img.png">
+                    <div class="ahmt">
+                        <h1>Cyber Hackathon 2022 Winners</h1><br />
+                        <p>Greetings. Cyber Hackathon 2022 was conducted by Greater Chennai Police (GCP) on 26/12/2022
+                            29 teams have been selected from the 302 submissions for the final round presentation held
+                            at Incubation center, Anna University, Chennai inclusive of 5 teams from VIT Chennai
+                            mentored for the past one month by SCOPE faculty Dr. K. Vallidevi, Dr. S. Geetha, Dr. R.
+                            Suganya & Dr. T. Subbulakshmi.</p>
+
+                        <p>The team of SCOPE faculty and students Dr. Vallidevi K, Associate Professor, SCOPE, Shiva
+                            Gurunath - 20BPS1028, Kuralamuthan B - 20BPS1082 won the I Prize in the finals and awarded
+                            the gifts and trophy by Mr. Shankar Jiwal, Chennai Police Commissioner, Selvi. Kiran
+                            Shruthi, IPS, Deputy Commissioner of Police, Ms. G.Nagajothi, Deputy Commissioner of Police&
+                            Dr. R. Velraj, VC, Anna Univ.</p>
+                    </div>
+                </div>
+
+                <hr style="width:60%" />
+                <div style="margin-top: 50px; ">
+                    <img width="400px" style="margin-left:10vw;" src="./assets/a2-img.png">
+                    <div style="margin-bottom: 6vh;" class="ahmt">
+                        <h1>App Frenzy 2.0 National-level Hackathon</h1><br />
+                        <p>We are very glad to congratulate our student team ‘Dev Daredevils’ School of Computer Science
+                            and Engineering, VIT Chennai for securing Third place in the App Frenzy 2.0 National-level
+                            Hackathon, organized by Sri Sairam Engineering College with the objective of developing
+                            mobile applications that are innovative and useful in real life. Team Members - Dev
+                            Daredevils<br /> 1. Aadhithya D (21BPS1236)<br /> 2. Adithya S (21BPS1223)<br /> 3. Sanjaii
+                            V (21BRS1021)<br /> 4. Thiruvikraman A (21BRS1013)</p>
+
+                        <p>Team won against 100+ competing teams, in which they developed a mobile app "FITNUT".
+                            The app uses Google ML kit's pose detection algorithm and the team created a model to detect
+                            workouts and count reps. Based on that, a score will be assigned. They have also implemented
+                            a leader board which displays the scores to encourage competition.</p>
+                    </div>
+                </div>
+
+                <hr style="width:60%" />
+                <br />
+                <br />
+                <button class="btn-read-more" id="read-more-btn" onclick="handleReadMore();">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="moreachievements" id="hiddenachivements">
+        <div style="color: white">
+            <div style="padding-top: 50px; margin-bottom: 6vh;">
+                <img width="400px" style="margin-left:10vw;" src="./assets/a3-img.png">
+                <div class="ahmt">
+                    <h1>Double Slash 2.0 National Level Hackathon</h1><br />
+                    <p>Our team, Inspire Coders, from IoThinc Club has emerged as winners of the second prize overall
+                        and the first prize in the IoT category in Double Slash 2.0, a national level hackathon
+                        organized by IEEE Jadavpur University. Our students Hariket Sukesh Kumar Sheth (20BCE1975),
+                        Sagar Mondal (21BCE1913), competed against 30+ colleges from across the country, and numerous
+                        participants took part in the hackathon. As a recognition of our victory, we have been awarded a
+                        cash prize of 10,000/-, certificates, and swags.</p>
+                    <br />
+                    <br />
+                    <p>It was an intense and challenging competition, but our team's dedication and commitment paid off.
+                        We leveraged IoT technology to create innovative solutions for industries, and our project
+                        received appreciation for its practicality and effectiveness. The award mail can be seen in the
+                        thread mail. We, from IoThinc, extend hearty thanks to the Student Welfare Office of VIT Chennai
+                        for their constant support and encouragement. We attribute our victory to you. Thank you!!!</p>
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 15vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 6vh;" src="./assets/a5-img.png">
+                <div class="ahmt">
+                    <h1>Optum Stratethon Season 4 Hackathon</h1><br />
+                    <p>It is absolute pleasure to share that our VIT Chennai teams have bagged both 1st and 2nd place in
+                        Optum Stratethon Season 4 - Engineering Track. Team "BYTEMAGIC" - Winners of E-Track were
+                        awarded prize money of $6700. <br />Joyeeta Dey - 19BCE1243 <br /> Apoorv Singh Chauhan -
+                        19BCE1055<br />
+                        Team "OPTUMIZERS" - Runners Up of E-Track were awarded prize money of $3000 <br /> Jyotika
+                        Jaiswal - 19BPS1034<br /> Arpan Ghosh - 19BCE1009</p>
+                    <br />
+                    <p>Optum Stratethon S4 had participation from 150+engineering and business schools across 3
+                        countries: India, the Philippines, and Singapore, and 19,000+ registrations. After completing 3
+                        challenging rounds, followed by presentations to both the Indian and Global Jury, the winners
+                        were announced in the Grand Finale which was hosted offline in Bangalore.</p>
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 6vh;">
+                <img width="400px" style="margin-left:10vw;" src="./assets/a6-img.png">
+                <div class="ahmt">
+                    <h1>ET Campus Coding Stars 2021-22</h1><br />
+                    <p>Congratulations! We are delighted to inform you that you have made it to the list of ET Campus
+                        Coding Stars 2021-22 powered by BridgeLabz. The third edition of ET Campus Coding Stars
+                        attracted participation from over 18,000 budding engineers from more than 2,000 engineering
+                        colleges across the country. Of these, 72 have been selected as the most talented coding minds.
+                    </p>
+                    <br />
+                    <br />
+                    <p>We really hope that your ETCS journey has been an enriching one and that the recognition will
+                        help you immensely in your future endeavours.</p>
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 6vh;">
+                <img width="400px" style="margin-left:10vw;" src="./assets/a7-img.jpg">
+                <div class="ahmt">
+                    <h1>Google Cloud The NEXT Big THING Hackathon</h1><br />
+                    <p>Hartej Singh (19BCT0168) & Pallavi Chauhan (19BCE0102) for participated in and reached the finale
+                        of Google Cloud The NEXT Big THING Hackathon. The prototype on the theme Banking & Finance was
+                        shortlisted in the top 6 among 330+ submissions all over India from all age groups as it was an
+                        open-to-all competition. Google Cloud Next 2022, Bangalore for the Grand Finale to showcase
+                        our prototype in front of jury members and industry experts on October 12–13, 2022, at the
+                        Bangalore International Exhibition Center, Bangalore.,</p>
+                    <br />
+                    <br />
+
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 8vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a8-img.png">
+                <div class="ahmt">
+                    <h1>International Space Science Challenge 2022,</h1><br />
+                    <p>It is pleasure to share that our team ‘Quarky Quasars’ has achieved the position of ‘Winner’ in
+                        the Space Robotics Category in the International Space Science Challenge 2022, organized by
+                        Spaceonova with an objective to induce problem-solving skills, design thinking, and
+                        solution-oriented mindset among students in the fields of space technology and exploration.</p>
+                    <br />
+                    <p>The team won against 100+ competing teams with the proposed idea of ‘Asteroid mining bots’, which
+                        suggested ways to exploit asteroids that are filled with potential minerals that can be
+                        beneficial for earthlings in order to solve the problem of lack of resources. The project
+                        includes planning and designing the technical aspects of Mining Bots using prototyping software.
+                    </p>
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a9-img.png">
+                <div class="ahmt">
+                    <h1>International Space Science Challenge 2022,</h1><br />
+                    <p>Happy to share that our team "Green Genesis (Sabari Ganesh - 21BPS1209 and Gautham Krishna-
+                        21BRS1032) participated in "Lumos Metaverse's Build for Web3 Hackathon" which had around 7700+
+                        developers across the world with all proficiency and 14 winning tracks by sponsors !!</p>
+                    <br />
+                    <p>Our students' team won Pool Prize in Polygon Track.<br /> Participants: <br />Sabari Ganesh K
+                        (21BPS1209)<br /> CP Gautham Krishna (21BRS1032)</p>
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a10-img.jpg">
+                <div class="ahmt">
+                    <h1>Outstanding Leadership Award in the field of Technology</h1><br />
+                    <p>our student 19MIA 1100 Anirudh Vasudev has won the Outstanding Leadership Award in the field of Technology at Internet 2.0 Conference held at the Intercontinental Hotel Dubai Festival City, Dubai</p>
+                    <br />
+                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img height="250px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a11-img.jpg">
+                <div class="ahmt">
+                    <h1>Finalist in all Girls Hackathon – CHALAANG</h1><br />
+                    <p>Part of the finalist team at Chalaang Hackathon which was conducted by Passion Connect in the Microsoft Office on 9th of December in Mumbai, Maharashtra.</p>
+                    <br />
+                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a12-img.jpg">
+                <div class="ahmt">
+                    <h1>Tamil Computing 2022</h1><br />
+                    <p>Susindhar A (20BCE1973),<br/>
+                        JayaganeshVelayutham (22MIA1177)<br/>
+                        Navtej S Nair (22MIS1122)<br/>
+                        Our students won the first prize with cash award Rs. 50000 /- in Hackathon on Tamil Computing 2022 jointly organized by Tamil Virtual Academy and VIT Vellore.
+                        </p>
+                    <br />                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img height="250px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a13-img.jpg">
+                <div class="ahmt">
+                    <h1>HackWithInfy 2022</h1><br />
+                    <p>KashviAnkibhaiSheth has been selected as the Campus Ambassador for Infosys based on her performance in HackWithInfy September 2022.
+                        </p>
+                    <br />                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img height="250px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a14-img.jpg">
+                <div class="ahmt">
+                    <h1>ICIoT-2022 held at SRM Institute of Science & Technology</h1><br />
+                    <p> Prasad A 19BAI1061<br/>
+                        Sruthi Srinivasan 19BAI1046 <br/>
+                        Vedang Sawarkar 19BCE1303<br/>
+                        Saumya Bhardwaj 19BCE1067<br/>
+                        Jaiveer Singh Rathore 19BLC1181<br/>
+                        Our students won two best paper awards in ICIoT-2022 held at SRM.
+                        </p>
+                    <br />                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a15-img.jpg">
+                <div class="ahmt">
+                    <h1>Binance Ideathon(Blockchain Based) June 2022</h1><br />
+                    <p> Delano Oscar Do Rosario Lourenco 20BAI1158<br />
+                        Vishal Singh 20BLC1054<br />
+                        Sinojia Meet Chandreshbhai 20BCE1234<br />
+                        Eshan Das 19BCE1575<br />
+                        
+                        Binance Ideathon June 2022 shortlisted four of our teams. The below students headed the team.
+                        </p>
+                    <br/>   
+                    <br/>                 
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a16-img.jpg">
+                <div class="ahmt">
+                    <h1>Hack for Sport Finalists</h1><br />
+                    <p> Mohit Madhukar More 19MIA1005<br/>
+                        Bhamidipati Naga Shrikriti 19MIA1037 <br/>
+                        Sayantan Nandy 19MIA1049<br/>
+                        Hanchate Samyuktha 19MIA1080<br/>
+                        Gitansh Saharan 19MIA1060<br/>
+                        Our students were the finalists in India’s first gaming and sport Hackathon by Sporjo – June 2022
+                        </p>
+                    <br />                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a17-img.jpg">
+                <div class="ahmt">
+                    <h1>Rakathon 2022 Global Hackathon </h1><br />
+                    <p> JAYIT SAHA- 18BCE1071<br/>
+                        JYOTIKA JAISWAL- 19BPS1034<br/>
+                        ARPAN GHOSH- 19BCE1009<br/><br/>
+                        Our students are the global winners of Rakathon 2022
+                        </p>
+                    <br />                    
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a18-img.jpg">
+                <div class="ahmt">
+                    <h1>Binance Ideathon Winners, Runners and Best SPOC Award</h1><br />
+                    <p> DELANO OSCAR DO ROSARIO LOURENCO- 20BAI1158 (TEAM LEADER)<br/>
+                        MEHTA AARYAN URMIL- 20BAI1108<br/>
+                        KEVIN GANDHI- 20BCE1377<br/>
+                        M V H SAI SRIRAJ- 20BAI1224<br/><br/>
+                        Our students have been awarded  the Binance Ideathon Winners, Runners and Best SPOC Award for the project titled “PS4-Creation of a platform for local artisans to promote their products using NFT” under the guidance of Dr.V.Sakthivel.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a19-img.jpg">
+                <div class="ahmt">
+                    <h1>Binance Ideathon Winners, Runners and Best SPOC Award</h1><br />
+                    <p> SINOJIA MEET CHANDRESHBHAI 20BCE1234 (TEAM LEADER)<br/>
+                        VADGAMA DARSHIT NIRAVBHAI- 20BLC1004<br/>
+                        MEGHA NATH- 20BCE1581<br/>
+                        RISHANK SHARMA- 20BCE1783<br/><br/>
+                        Our students have been awarded the Binance Ideathon Winners, Runners and Best SPOC Award for the project titled “PS6-Decentralized EV Charging Infrastructure” under the guidance of Dr.V.Sakthivel.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a20-img.jpg">
+                <div class="ahmt">
+                    <h1>DAIMLER INDIA COMMERCIAL VEHICLES (DICV) Hackathon’2022</h1><br />
+                    <p> THRISHA B19MIA1011<br/>
+                        GONUGUNTLA ANJANA CHOWDARY-19MIA1017<br/>
+                        SUBHIKSHA S-19MIA1087<br/>
+                        GAURAV TRIVEDI- 19MIA1077<br/><br/>
+                        Our students were shortlisted for Daimler India Commercial Vehicles (DICV) Hackathon’2022.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a21-img.jpg">
+                <div class="ahmt">
+                    <h1>Smart India Hackathon 2022 – Team Aquasol</h1><br />
+                    <p> ARAN AGARWAL-21BCE5443 (TEAM LEADER)<br/>
+                        AANCHAL SINGH 21BCE5447<br/>
+                        IPSIT MAURYA 21BCE5390<br/>
+                        ISHITA AGARWAL 21BCE5317<br/>
+                        SAURAV SINGH 21BCE5384<br/>
+                        SAMBHAV JAIN 21BRS1403<br/><br/>
+                        Our students received the runner up award for Smart India Hackathon 2022 – Team Aquasol – August 2022 under the guidance of Dr. Sakthivel.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a26-img.png">
+                <div class="ahmt">
+                    <h1>ARAI TechNovuss Mobility Hackathon</h1><br />
+                    <p> Ishita Agarwal (21BCE5317) : Team Leader<br/>
+                        C S Aditya (21BCE5493)<br/>
+                        IPSIT MAURYA 21BCE5390<br/>
+                        Aanchal Singh (21BCE5447)<br/>
+                        Saurav Singh (21BCE5384)<br/>
+                        <br/>
+                        The students got selected for the grand ﬁnale of ARAI TechNovuss Mobility Hackathon.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a22-img.png">
+                <div class="ahmt">
+                    <h1>Second Place in a Hackathon “Innerve”</h1><br />
+                    <p> Ayan Sadhukhan (19BCE1872)<br/>
+                        Aniket Bansal (19BCE1869)<br/>
+                        Ronit Kumar Sarkar (19BEC1236)<br/>
+                        <br/>
+                        The students won the 2nd position in the Innerve 6.0 National Hackathon at Army Institute of Technology, Pune. This event witnessed participation of over 1000 teams from colleges across India.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a23-img.png">
+                <div class="ahmt">
+                    <h1>Selected for the WE Program Supported by Google</h1><br />
+                    <p> Rujuta Prajakt Kulkarni 21BCE5196<br/>
+                        Vaishnavi Dixit (21BCE5108)<br/>
+                        <br/>
+                        Our students have been selected for the 4th Cohort of the TalentSprint WE (Women Engineers) Program, supported by Google to receive a cash scholarship of ₹1,00,000.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a24-img.png">
+                <div class="ahmt">
+                    <h1>Code to Care challenge 2021</h1><br />
+                    <p> Smridhi Verma(19BCE1550)<br/>
+                        S Deeksha (19BPS1090)<br/>
+                        Jigyasa Agarwal (19BPS1056)<br/>
+                        <br/>
+                        Won the 2nd position (runners up) in the Philips Code to Care 2021 Challenge. This event witnessed the participation of over 1350 teams from colleges across India.
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <div style="padding-top: 50px; margin-bottom: 7vh;">
+                <img width="400px" style="margin-left:10vw; margin-top: 1vh;" src="./assets/a25-img.png">
+                <div class="ahmt">
+                    <h1>Ford Cyber Security Awareness Month</h1><br />
+                    <p> Prithvi Seshadri (19BAI1105)<br/>
+                        Abishek Mahesh (19BAI1143)<br/>
+                        
+                        <br/>
+                        Students participated in Ford Cyber Security Awareness Month, call for papers – ” Role of AI/ML in cyber security” and have won the paper presentation. [The competition was conducted by FORD INDIA for the cyber security awareness month sticking to a domain of “Role of AI/ML in cyber security”. The competition had three rounds starting from the month of September, After gruelling rounds of competing with over participants from 300 colleges, the top 5 teams were selected to the Finale Event which happened on 29-10-2021]
+                        </p>
+                    <br/><br/>                      
+                </div>
+            </div>
+            <hr style="width:60%" />
+            <button class="btn-read-more" id="read-less-btn" onclick="handleReadLess();">Read Less</button>
+        </div>
+    </section>
+    <section class="placements" id="placements">
+        <h1>Placements</h1>
+        <div class="pc-demo">
+            <div class="owl-carousel owl-theme">
+                <div class="pc-item">
+                    <img src="./assets/p1-img.png" />
+                </div>
+                <div class="pc-item">
+                    <img src="./assets/p2-img.png" />
+                </div>
+                <div class="pc-item">
+                    <img src="./assets/p3-img.png" />
+                </div>
+                <div class="pc-item">
+                    <img src="./assets/p4-img.png" />
+                </div>
+                <div class="pc-item">
+                    <img src="./assets/p5-img.png" />
+                </div>
+
+            </div>
+        </div>
+        <h1>Recruiters</h1>
+        <img src="./assets/p-static-img.png" width="600vw"
+            style="margin-top:5vh; margin-left: 30vw; margin-bottom: 5vh;" />
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact us</h1>
+        <div style="margin-left: 10vw; margin-top: 5vh;">
+            <form>
+                <label>Name</label><br />
+                <input placeholder="Enter Your Name" type="text" /><br /><br />
+                <label>Phone Number</label><br />
+                <input placeholder="XXXXX XXXXX" type="number" /><br /><br />
+                <label>Email Id</label><br />
+                <input placeholder="abc@example.com" type="email" /><br /><br />
+                <label>Any Queries ?</label><br />
+                <textarea style="width: 40vw; resize: none;" rows="5" cols="50"></textarea><br /><br />
+                <button class="submit-btn" onclick="alert('Successfully Submitted')">Submit</button>
+            </form>
+        </div>
+
+        <img src="./assets/call-img.jpeg"
+            style="border-radius: 50%; margin-left: 70vw;margin-top: -90vh; margin-bottom: 15vh;" />
+
+    </section>
+    <footer
+        style="text-align: center; background-color: #162239; font-family: 'Raleway'; color: white;height :40px; padding-top: 8px; ">
+        Copyright © 2023 scope.com | All Rights Reserved </footer>
+</body>
+
+</html>
